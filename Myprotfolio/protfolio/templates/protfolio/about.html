@@ -16,7 +16,8 @@ ul {
     <div class="row">
       <div class="col s3">
         <div class="card">
-          <div class="card-image"><img src="images/sample-1.jpg"></div>
+        {% load static %}
+          <div class="card-image"><img src="{% static 'img/profile.png' %}"></div>
           <div class="card-action"><a href="">Shubham Kurale</a></div>
         </div>
         <div class="card">
@@ -118,7 +119,7 @@ ul {
           <th>English</th><td>C1</td><td>C1</td><td>C1</td><td>C1</td><tr>
           <th>Marathi</th><td>C2</td><td>C2</td><td>C2</td><td>C2</td></tr>
           <th>Hindi</th><td>C2</td><td>C2</td><td>C2</td><td>C2</td></tr>
-          <th>French</th><td>A1</td><td>A1</td><td>A1</td><td>A1</td></tr>
+          <!--<th>French</th><td>A1</td><td>A1</td><td>A1</td><td>A1</td></tr>-->
           <th>German</th><td>A1</td><td>A1</td><td>A1</td><td>A1</td></tr>
           <th>Japanese</th><td>N5</td><td>N5</td><td>N5</td><td>N5</td></tr>
         </tbody>
