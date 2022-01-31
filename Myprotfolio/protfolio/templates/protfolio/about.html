@@ -1,0 +1,185 @@
+{% extends "layout.html" %}
+{% block title %} {% endblock %}
+{% block style %}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1 em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+{% endblock %}
+{% block body %}
+  <div class="container">
+    <div class="row">
+      <div class="col s3">
+        <div class="card">
+          <div class="card-image"><img src="images/sample-1.jpg"></div>
+          <div class="card-action"><a href="">Shubham Kurale</a></div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+            <dl>
+  <dt>Core Python</dt>
+  <dd>Object-Oriented-Programming (OOP)</dd>
+  <dd>flask, django</dd>
+  <dd>Web Scraping</dd>
+  <dd>Regular expression</dd>
+  <dd>Object Relational Mapper(ORM)</dd>
+  <dd>SDLC, Agile, DevOps, CICD</dd>
+<!--  <dd>Test Driven Development(TDD)</dd> -->
+  <dd></dd>
+  <dt>Data Science</dt>
+  <dd>Numpy</dd>
+  <dd>Pandas</dd>
+  <dd>Matplotlib</dd>
+  <dd>Seaborn</dd>
+  <dd></dd>
+  <dt>Machine Learning</dt>
+  <dd>Scikit Learn</dd>
+  <dd>PyTorch</dd>
+  <dd></dd>
+  <dt>Database</dt>
+  <dd>MySQL</dd>
+  <dd>PostgreSQL,</dd>
+  <dd>MongoDB</dd>
+  <dd></dd>
+  <dt>Language's</dt>
+  <dd>C, C++, Java, Golang</dd>
+  <dd>PHP, Python</dd>
+  <dd>Shell, HTML5, CSS3, JS,</dd>
+  <dt>Front End</dt>
+  <dd>ReactJs, VueJS</dd>
+  <dt>DevOps Tools</dt>
+  <dd>Kubernetes, Jenkins, Terraform, Nagios, Puppet, Container, Ansible, ELK Stack, CI/CD</dd>
+  <dt>Cloud</dt>
+  <dd>Heroku, AWS, Google Cloud Platform, Microsoft Azure</dd>
+  <dt>Linux Administration</dt>
+  <dd>User Management</dd>
+  <dd>Shell Scripting</dd>
+  <dd>CRON Tab</dd>
+  <dt>Operating System</dt>
+  <dd>fedora, RedHat, CentOS, Ubuntu</dd>
+  <dd>Familiar with RHCSA</dd>
+</dl>
+            </div>
+            <div class="card-action"><a href="">Technical Skill's</a></div>
+        </div>
+      </div>
+      <div class="col s9">
+        <div class="card">
+          <div class="card-content">
+            <ul>
+             <!-- <li class="">Ongoing - Certificate in French Language <i>from IGNOU Delhi (Open University)</i> </li> -->
+              <li class="">Graduate in Computer Science and Engineering <i>from MGM College of Engineering, Nanded</i> </li>
+              <li class="">Diploma in Computer Engineer <i>from Gramin Polytechic Vishnupuri, Nanded </i> </li>
+            </ul>
+          </div>
+          <div class="card-action"><a href="">Education</a></div>
+        </div>
+      </div>
+      <!--
+      <div class="col s9">
+          <div class="card">
+            <div class="card-content">
+              <table class="highlight responsive-table ">
+                <col><colgroup span="2"></colgroup><colgroup span="2"></colgroup><tr>
+                  <td rowspan="2"></td>
+                  <th colspan="2" scope="colgroup">Understanding</th><th colspan="1" scope="colgroup">Speaking</th><th colspan="1" scope="colgroup">Writing</th>
+                </tr>
+                <tr>
+                  <th scope="col">Listening</th><th scope="col">Reading</th><th scope="col">Interaction</th>
+                </tr>
+                <tr>
+                  <th scope="row">English</th><td>C1</td><td>C1</td><td>C1</td><td>C1</td><tr>
+                  <th scope="row">Marathi</th><td>C2</td><td>C2</td><td>C2</td><td>C2</td></tr>
+                  <th scope="row">Hindi</th><td>C2</td><td>C2</td><td>C2</td><td>C2</td></tr>
+                  <th scope="row">French</th><td>A1</td><td>A1</td><td>A1</td><td>A1</td></tr>
+                  <th scope="row">German</th><td>A1</td><td>A1</td><td>A1</td><td>A1</td></tr>
+                  <th scope="row">Japanese</th><td>N5</td><td>N5</td><td>N5</td><td>N5</td></tr>
+              </table>
+              <p> A1 and A2: 'Basic', B1 and B2: 'Independent', C1 and C2: 'Proficient'</p>
+              <p> N1: 'Advanced', N2: 'Upper Intermediate', N3: 'Intermediate', N4: 'Elementry', N5: 'Basic'
+            </div>
+            <div class="card-action"><a href="">Language's Known</a></div>
+          </div>
+        </div>
+        -->
+        <div class="col s9">
+          <div class="card">
+            <div class="card-content">
+      <table>
+        <thead>
+          <tr><th></th><th>Listening</th><th>Reading</th><th>Speaking</th><th>Writing</th></tr>
+        </thead>
+        <tbody>
+          <th>English</th><td>C1</td><td>C1</td><td>C1</td><td>C1</td><tr>
+          <th>Marathi</th><td>C2</td><td>C2</td><td>C2</td><td>C2</td></tr>
+          <th>Hindi</th><td>C2</td><td>C2</td><td>C2</td><td>C2</td></tr>
+          <th>French</th><td>A1</td><td>A1</td><td>A1</td><td>A1</td></tr>
+          <th>German</th><td>A1</td><td>A1</td><td>A1</td><td>A1</td></tr>
+          <th>Japanese</th><td>N5</td><td>N5</td><td>N5</td><td>N5</td></tr>
+        </tbody>
+      </table>
+      <p> A1 and A2: 'Basic', B1 and B2: 'Independent', C1 and C2: 'Proficient'</p>
+              <p> N1: 'Advanced', N2: 'Upper Intermediate', N3: 'Intermediate', N4: 'Elementry', N5: 'Basic'
+            </div>
+            <div class="card-action"><a href="">Language's Known</a></div>
+          </div>
+        </div>
+        <div class="col s9">
+          <div class="card">
+            <div class="card-content">
+              <ul>
+                <li>Certificate course in French Language IGNOU Delhi (Open University) June 2021-current</li>
+                <li>Machine learning to Deep learning : A journey for remote sensing data classification from IIRS, Dehradun July 2021</li>
+                <li>Geoinformatics for Disaster Management from IIRS, Dehradun April 2021</li>
+                <li>GIS for Supply Chain Management from IIRS, Dehradun April 2021</li>
+                <li>Network Security & Ethical Hacking from Network Bulls, Delhi 2014</li>
+                <li>Linux Apache MySQL PHP (LAMP) Chankya Softech, Aurangabad 2012-2013</li>
+              </ul>
+            </div>
+            <div class="card-action"><a href="">Courses and Certificate</a></div>
+          </div>
+        </div>
+        <div class="col s9">
+          <div class="card">
+            <div class="card-content">
+            <ul>
+                <li>Ethical Hacking cyber security bootcamp from Anfeidrol Educations, Bored Programmer Private Limited April 2021</li>
+                <li>MatLAB in Reasearch and Data Analystics SGGS College of Engineering,Nanded May 2016</li>
+                <li>Data Mining using STATISTICA SGGS College of Engineering, Nanded July 2016</li>
+                <!--<li></li>
+                <li></li> -->
+            </ul>
+            </div>
+            <div class="card-action"><a href="">Workshop</a></div>
+          </div>
+        </div>
+        <div class="col s9">
+          <div class="card">
+            <div class="card-content">
+              <ul>
+                <li>Learning new technology Ansible, Puppet, Jenkins</li>
+                <li>Watching documentaries</li>
+                <li>Learning new languages such as Japanese, Korean</li>
+                <li>Love to cook and exploring food cultures around the world</li>
+              </ul>
+            </div>
+            <div class="card-action"><a href="">Hobbies and Interests</a></div>
+          </div>
+        </div>
+        <!--
+        <div class="col s9">
+          <div class="card">
+            <div class="card-content">
+            </div>
+            <div class="card-action"><a href=""></a></div>
+          </div>
+        </div>
+        -->
+    </div>
+  </div>
+{% endblock %}

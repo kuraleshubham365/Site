@@ -1,0 +1,92 @@
+{% extends "layout.html" %}
+{% block title %} {% endblock %}
+{% block body %}
+
+<!--<div class="container carousel-slider">
+<div class="carousel">
+    {% load static %}
+    <a class="carousel-item" href="#one!"><img src="{% static '/img/1.png' %}"></a>
+    <a class="carousel-item" href="#two!"><img src="{% static '/img/2.png' %}"></a>
+    <a class="carousel-item" href="#three!"><img src="{% static '/img/3.png' %}"></a>
+    <a class="carousel-item" href="#four!"><img src="{% static '/img/4.png' %}"></a>
+    <a class="carousel-item" href="#five!"><img src="{% static '/img/5.png' %}"></a>
+  </div>-->
+
+<div class="carousel carousel-slider center">
+    {% load static %}
+    <div class="carousel-item"><img src="{% static '/img/1.png' %}"></div>
+    <div class="carousel-item"><img src="{% static '/img/2.png' %}"></div>
+    <div class="carousel-item"><img src="{% static '/img/3.png' %}"></div>
+    <div class="carousel-item"><img src="{% static '/img/4.png' %}"></div>
+</div>
+
+    <h3>Contact</h3>
+    <div class="row">
+        <form class="col s12" action='' method="post">
+          {% csrf_token %}
+          {# {{form}} for forms.py created class based input form #}          
+        <div class="row">
+            <div class="input-field col s6">
+            <i class="material-icons prefix">account_circle</i>
+            <!-- <input id="icon_prefix" name="Name" type="text" class="validate" required> -->
+            {{ form.name }}
+            <label for="icon_prefix">Name</label>
+            </div>
+            <div class="input-field col s6">
+            <i class="material-icons prefix">phone</i>
+            <!-- <input id="icon_telephone" name="mobile" type="tel" class="validate"> -->
+            {{ form.mobile }}
+            <label for="icon_telephone">Telephone</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s6">
+            <i class="material-icons prefix">email</i>
+            <!-- <input id="icon_email" name="email" type="tel" class="validate"> -->
+            {{ form.email }}
+            <label for="icon_email">Email</label>
+            </div>
+            <div class="input-field col s6">
+            <i class="material-icons prefix">business</i>
+            <!-- <input id="icon_business" name="c_name" type="tel" class="validate"> -->
+            {{ form.cmp_nm }}
+            <label for="icon_business">Company Name</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s6">
+            <i class="material-icons prefix">mode_edit</i>
+            <!-- <input id="icon_prefix2" name="subject" type="text" class="validate"> -->
+            {{ form.subject }}
+            <label for="icon_prefix2">Subject</label>
+            </div>
+            <div class="input-field col s6">
+            <i class="material-icons prefix">keyboard</i>
+            <!-- <textarea id="textarea1" name="msg" class="materialize-textarea"></textarea> -->
+            {{ form.message }}
+            <label for="icon_keyboard">Message</label>
+            </div>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+        <i class="material-icons right">send</i>
+        </button>
+        </form>
+        </div>
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("carousel-item");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 6000); 
+}
+</script>
+{% endblock %}
